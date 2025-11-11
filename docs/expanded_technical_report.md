@@ -203,16 +203,19 @@ Once time is aligned, preserve consistent IDs across cameras.
 7. **Visualize** trajectories in a unified coordinate space.
 ---
 
-## 10. Research in Temporal Synchronization & Identity Matching
-| Category | Method                        | Key Idea                                         | Source     |
-|----------|-------------------------------|--------------------------------------------------|------------|
-| Temporal | **SynNet**                    | View-invariant poses to infer time offset        | ICCV 2019  |
-| Temporal | Pose-Motion Fusion            | Weighted 3D joint confidence for alignment       | AAAI 2017  |
-| Identity | TransReID + Spectral Clustering | Fuse Transformer Re-ID with motion             | MDPI 2023  |
-| Identity | **LMGP**                      | Lifted multicut graph optimization               | arXiv 2021 |
-| Identity | **AGC + STC**                 | Anchor-guided clustering + spatio-temporal reassignment | CVPRW 2023 |
-| Identity | CrossMOT / DIVOTrack          | Joint detection + embedding learning             | arXiv 2023 |
-| Identity | **MCTR / GMT**                | Transformer global association                    | WACV 2025 / arXiv 2024 |
+### 10. Research in Temporal Synchronization & Identity Matching
+
+| Category | Method | Key Idea | Source |
+|-----------|---------|-----------|---------|
+| Temporal | SynNet | View-invariant poses used to infer temporal offsets between cameras | ICCV 2019 |
+| Temporal | Pose-Motion Fusion | Weighted 3D joint confidence for motion alignment | AAAI 2017 |
+| Identity | TransReID + Spectral Clustering | Combines Transformer-based Re-ID with motion-aware clustering | MDPI 2023 |
+| Identity | LMGP | Lifted multicut graph optimization for identity grouping | arXiv 2021 |
+| Identity | AGC + STC | Anchor-guided clustering with spatio-temporal reassignment | CVPRW 2023 |
+| Identity | CrossMOT / DIVOTrack | Joint detection and embedding learning for multi-camera association | arXiv 2023 |
+| Identity | MCTR / GMT | Transformer-based global multi-camera association | WACV 2025 / arXiv 2024 |
+
+These approaches represent a shift from heuristic re-identification pipelines toward end-to-end, transformer-based global optimization methods.
 
 These approaches mark progress from heuristic re-ID to **end-to-end transformer-based global trackers**.
 
