@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Edge-AI Vision on Axis Cameras
+title: tracking algorithms on Axis
 nav_order: 1
 ---
 
-# Edge-AI Vision on Axis Cameras
+# Implementation of tracking algorithms on a cluster of Axis cameras (ACAP/DLPU), including synchronization, model selection, quantization, and cross-camera identity matching.
 
 This site documents an implementation of tracking algorithms on a cluster of Axis cameras (ACAP/DLPU): synchronization, model selection, quantization, and cross-camera ID.
 
