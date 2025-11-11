@@ -7,7 +7,6 @@ description: Implementation of tracking algorithms on a cluster of Axis cameras 
 # Edge-AI Vision Systems on Axis ACAP Cameras
 **Fisheye Tracking • Multi-Camera Synchronization • Cross-Camera Identity Matching**
 
-> Technical documentation site built with [Just the Docs](https://just-the-docs.github.io/just-the-docs/) and deployed via GitHub Pages.
 
 ---
 
