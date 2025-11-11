@@ -15,27 +15,28 @@ nav_order: 2.8
 - **SSD MobileNet v2**
 - **SSDLite MobileDet**
 - **YOLOv5 (n/s/m)** on ARTPEC-8/9
-
 ## Benchmarks (Axis Model Zoo excerpts)
-| SoC/Camera | Model | Latency (ms) | mAP/Top-1 | Notes |
-|---|---|---|---|---|
-| ARTPEC-7 (Q1615 Mk III) | SSD-MobV2 | 17.81 | 25.6 mAP | Fastest on A7 |
-|  | SSDLite MobileDet | 31.16 | 32.9 mAP | More accurate |
-| ARTPEC-8 (P1465-LE) | SSD-MobV2 | 28.04 | 25.6 mAP | 300×300 input |
-|  | SSDLite MobileDet | 38.93 | 32.9 mAP |  |
-|  | YOLOv5n-Artpec8 | 100.05 | 23.5 mAP | small YOLO |
-| ARTPEC-8 (Q1656-LE) | SSD-MobV2 | 17.67 | 25.6 mAP | newer HW |
-|  | SSDLite MobileDet | 28.40 | 32.9 mAP |  |
-|  | YOLOv5n-Artpec8 | 55.52 | 23.5 mAP |  |
-|  | YOLOv5s-Artpec8 | 69.87 | 32.3 mAP |  |
-|  | YOLOv5m-Artpec8 | 95.34 | 37.9 mAP |  |
-| ARTPEC-9 (Q1728) | SSD-MobV2 | 10.35 | 25.6 mAP | fastest |
-|  | SSDLite MobileDet | 21.00 | 32.9 mAP |  |
-|  | YOLOv5n-Artpec9 | 42.59 | 23.3 mAP |  |
-|  | YOLOv5s-Artpec9 | 45.54 | 32.2 mAP |  |
-|  | YOLOv5m-Artpec9 | 53.22 | 38.1 mAP |  |
-| CV25 (M3085-V) | SSD-MobV2 | 5.36 | — | Ambarella DLPU |
-|  | EfficientNet-Lite0 (cls) | 6.75 | 71.2% Top-1 | classification |
+
+| SoC/Camera             | Model                | Latency (ms) | mAP/Top-1   | Notes                  |
+|------------------------|---------------------|--------------|-------------|------------------------|
+| ARTPEC-7 (Q1615 Mk III)| SSD-MobileNet v2    | 17.81        | 25.6 mAP    | Fastest on A7          |
+| ARTPEC-7 (Q1615 Mk III)| SSDLite MobileDet   | 31.16        | 32.9 mAP    | More accurate          |
+| ARTPEC-8 (P1465-LE)    | SSD-MobileNet v2    | 28.04        | 25.6 mAP    | 300x300 input          |
+| ARTPEC-8 (P1465-LE)    | SSDLite MobileDet   | 38.93        | 32.9 mAP    |                        |
+| ARTPEC-8 (P1465-LE)    | YOLOv5n-Artpec8     | 100.05       | 23.5 mAP    | Small YOLO             |
+| ARTPEC-8 (Q1656-LE)    | SSD-MobileNet v2    | 17.67        | 25.6 mAP    | Newer hardware         |
+| ARTPEC-8 (Q1656-LE)    | SSDLite MobileDet   | 28.40        | 32.9 mAP    |                        |
+| ARTPEC-8 (Q1656-LE)    | YOLOv5n-Artpec8     | 55.52        | 23.5 mAP    |                        |
+| ARTPEC-8 (Q1656-LE)    | YOLOv5s-Artpec8     | 69.87        | 32.3 mAP    |                        |
+| ARTPEC-8 (Q1656-LE)    | YOLOv5m-Artpec8     | 95.34        | 37.9 mAP    |                        |
+| ARTPEC-9 (Q1728)       | SSD-MobileNet v2    | 10.35        | 25.6 mAP    | Fastest                |
+| ARTPEC-9 (Q1728)       | SSDLite MobileDet   | 21.00        | 32.9 mAP    |                        |
+| ARTPEC-9 (Q1728)       | YOLOv5n-Artpec9     | 42.59        | 23.3 mAP    |                        |
+| ARTPEC-9 (Q1728)       | YOLOv5s-Artpec9     | 45.54        | 32.2 mAP    |                        |
+| ARTPEC-9 (Q1728)       | YOLOv5m-Artpec9     | 53.22        | 38.1 mAP    |                        |
+| CV25 (M3085-V)         | SSD-MobileNet v2    | 5.36         | —           | Ambarella DLPU         |
+| CV25 (M3085-V)         | EfficientNet-Lite0  | 6.75         | 71.2% Top-1 | Classification model   |
+
 
 **Pose estimation**: **MoveNet SinglePose Lightning (192×192)** on ARTPEC-8; 17 keypoints + confidences. Multi-container example (inference + Flask server).
 
