@@ -7,8 +7,6 @@ remote_theme: "jekyll/minima@v2.5.0"
 
 plugins:
   - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-seo-tag
 
 url: "https://alinikkhah2001.github.io"
 baseurl: "/edge"
