@@ -1,15 +1,14 @@
 title: "Edge AI"
 description: "Axis ACAP • Fisheye Tracking • Multi-Camera Synchronization"
 url: "https://alinikkhah2001.github.io"
-baseurl: "/edge"
+baseurl: "/edge"   # project site => /edge
 
 remote_theme: "just-the-docs/just-the-docs"
 
 plugins:
   - jekyll-remote-theme
-  - jekyll-seo-tag   # optional but nice
+  - jekyll-seo-tag
 
-# Just the Docs options
-search_enabled: false
+search_enabled: true
 permalink: pretty
 footer_content: "© Ali Nikkhah — Edge AI & Vision"
