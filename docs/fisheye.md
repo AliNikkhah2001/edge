@@ -17,7 +17,7 @@ Recent research has advanced two complementary directions:
 ## 1. Rectified Convolutions (RectConv)
 
 **Paper:** *Adapting CNNs for Fisheye Cameras Without Retraining* (Griffiths & Dansereau, 2024):contentReference[oaicite:2]{index=2}
-![RectConv vs Conv kernel deformation](assets/images/fisheye/rectconv_fig2.png)
+![RectConv]({{ "/assets/images/fisheye/rectconv_fig2.png" | relative_url }})
 *Figure 1. Standard convolution vs RectConv on fisheye imagery (paper Fig. 2).*
 
 ### Overview
@@ -37,8 +37,7 @@ Instead of rectifying the **input image**, RectConv **rectifies the convolution 
 
 3. **Compatibility:**  
    Works best on **fully convolutional networks (FCNs)** such as DeepLabV3 or FCN-ResNet, which accept arbitrary input sizes.
-
-![RectConv projection pipeline](assets/images/fisheye/rectconv_fig3.png)
+![Proj]({{ "/assets/images/fisheye/rectconv_fig3.png" | relative_url }})
 *Figure 2. Projection and resampling pipeline (paper Fig. 3).*
 ### Experimental Results
 - **Datasets:** Woodscape (fisheye driving) and PIROPO (omnidirectional people tracking).  
@@ -76,9 +75,9 @@ FEMOT overcomes these issues by **learning distortions directly**, avoiding any 
 
 ### Architecture Overview
 FEMOT consists of two core modules (see *Fig. 2 p. 2*):
-![FEMOT pipeline diagram](assets/images/fisheye/femot_fig2.png)
+![FEMOT]({{ "/assets/images/fisheye/femot_fig2.png" | relative_url }})
 *Figure 3. FEMOT pipeline with DFIA and HDA (paper Fig. 2).*
-![DFIA augmentation examples](assets/images/fisheye/femot_fig3.png)
+![DFIA]({{ "/assets/images/fisheye/femot_fig3.png" | relative_url }})
 *Figure 4. DFIA examples with increasing distortion (paper Fig. 3).*
 1. **Distorted Fisheye Image Augmentation (DFIA)**  
    - Synthesizes fisheye distortions from standard perspective datasets using geometric projection equations.  
