@@ -1,4 +1,5 @@
 ---
+nav_order: 1
 title: Edge-AI Vision Systems on Axis ACAP Cameras
 description: Implementation of tracking algorithms on a cluster of Axis cameras (ACAP/DLPU), including synchronization, model selection, quantization, and cross-camera identity matching.
 ---
