@@ -10,6 +10,6 @@ plugins:
   - jekyll-seo-tag   # optional but nice
 
 # Just the Docs options
-search_enabled: true
+search_enabled: false
 permalink: pretty
 footer_content: "© Ali Nikkhah — Edge AI & Vision"
