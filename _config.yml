@@ -1,16 +1,15 @@
 title: "Edge AI"
 description: "Axis ACAP • Fisheye Tracking • Multi-Camera Synchronization"
-remote_theme: just-the-docs/just-the-docs
-
-
-remote_theme: "jekyll/minima@v2.5.0"
-
-plugins:
-  - jekyll-remote-theme
-
 url: "https://alinikkhah2001.github.io"
 baseurl: "/edge"
 
+remote_theme: "just-the-docs/just-the-docs"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag   # optional but nice
+
+# Just the Docs options
 search_enabled: true
 permalink: pretty
-footer_content: "©Ali Nikkhah — Edge AI & Vision"
+footer_content: "© Ali Nikkhah — Edge AI & Vision"
