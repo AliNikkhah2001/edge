@@ -2,9 +2,13 @@ title: "Edge AI"
 description: "Axis ACAP • Fisheye Tracking • Multi-Camera Synchronization"
 remote_theme: just-the-docs/just-the-docs
 
+
+remote_theme: "jekyll/minima@v2.5.0"
+
 plugins:
   - jekyll-remote-theme
-
+  - jekyll-feed
+  - jekyll-seo-tag
 
 url: "https://alinikkhah2001.github.io"
 baseurl: "/edge"
