@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Quantization & Laptop Emulation
-nav_order: 4
+parent: Axis Model Zoo
+nav_order: 2
 ---
 
 # Quantization & Laptop Emulation

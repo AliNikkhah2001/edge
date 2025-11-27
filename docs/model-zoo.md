@@ -2,6 +2,7 @@
 layout: default
 title: Axis Model Zoo
 nav_order: 3
+has_children: true
 ---
 
 # Axis Model Zoo

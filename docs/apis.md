@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Axis APIs Summary
-nav_order: 2.6
+parent: ACAP Hardware & DLPU
+nav_order: 4
 ---
 
 # Axis APIs Summary (ACAP)

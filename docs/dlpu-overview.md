@@ -1,7 +1,8 @@
 ---
 layout: default
 title: DLPUs Explained (Architectures & ACAP specifics)
-nav_order: 2.9
+parent: ACAP Hardware & DLPU
+nav_order: 2
 ---
 
 # Deep Learning Processing Units (DLPUs)
