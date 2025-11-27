@@ -16,6 +16,16 @@ Guidance for detecting, classifying, and tagging handwashing events on Axis ACAP
 
 ---
 
+## Research Highlights (camera-based handwashing)
+- **Two-stage perception remains the most reliable pattern**: light person/hand detection followed by a temporal classifier over hand crops or pose sequences provides higher robustness than single-frame labeling when hands are occluded by sinks or sleeves.
+- **Temporal context matters**: 3–5 second windows with overlapping strides reduce flicker and improve compliance judgments versus per-frame classification.
+- **State granularity**: At minimum, track **washing vs. not washing**; richer pipelines distinguish **wetting → soaping → scrubbing → rinsing → drying**, which helps compute total scrub time and flag skipped steps.
+- **Duration reasoning**: Combine per-frame probabilities with a running timer to enforce **20–30 s** minimum washing and **10–15 s** scrubbing targets before transition to rinse/dry.
+- **Occlusion and lighting resilience**: Models benefit from varied training clips (gloves vs. bare hands, different faucets/soap positions) and ROI masking that ignores mirrors or bystanders.
+- **Privacy-forward design**: Prefer on-camera processing, short retention of cropped hands, and event-level metadata export instead of raw video whenever policy allows.
+
+---
+
 ## Data & Modeling Options
 - **Inputs:** RGB or fisheye streams at 720p/1080p; prefer synchronized timestamps when using multiple views.
 - **Detection backbone:** Reuse lightweight person/hand detectors (e.g., SSD/YOLOv5n) from the [Model Zoo]({{ site.baseurl }}/docs/model-zoo) and quantize to INT8 via the [Quantization guide]({{ site.baseurl }}/docs/quantization).
@@ -48,6 +58,18 @@ Guidance for detecting, classifying, and tagging handwashing events on Axis ACAP
 - Target **INT8** for detector and classifier; keep pose model lightweight (e.g., MoveNet lightning) if used.
 - For fisheye streams, reuse the [Fisheye]({{ site.baseurl }}/docs/fisheye) dewarp/rotated-window strategy before hand crops.
 - Configure **multicam synchronization** (hardware trigger or SynNet) when combining entrance and sink views to avoid temporal drift.
+
+---
+
+## Datasets & Annotation Strategy
+- **Capture diversity**: Record multiple sinks, faucet/soap layouts, glove vs. bare hands, lighting shifts, and mirrored backgrounds. Aim for both overhead and oblique angles to match deployment options.
+- **Annotations**:
+  - Bounding boxes for hands (and optionally persons) at 5–10 fps to bootstrap detection.
+  - Clip-level and frame-level labels for washing states to train the temporal classifier.
+  - Event-level metadata (start/end, duration, compliance) for QA dashboards.
+- **Data balance**: Include near-misses (short scrubs, rinse-only behavior, partial sequences) to reduce false compliance.
+- **Augmentations**: Motion blur, specular highlights from faucets, and random occlusions simulate water splash and reflections.
+- **Evaluation splits**: Hold out sinks and subjects unseen during training to test generalization.
 
 ---
 
