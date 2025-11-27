@@ -1,7 +1,8 @@
 ---
 layout: default
 title: ACAP v12 Programming Guide
-nav_order: 2.5
+parent: ACAP Hardware & DLPU
+nav_order: 3
 ---
 
 # Programming on Axis Cameras with **ACAP v12**

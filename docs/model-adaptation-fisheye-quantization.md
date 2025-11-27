@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Model Adaptation: Fisheye Tracking & Quantization Emulation
-nav_order: 3.2
+parent: Axis Model Zoo
+nav_order: 3
 ---
 
 # Model Adaptation with Axis Model Zoo: Fisheye Tracking & Quantization Emulation

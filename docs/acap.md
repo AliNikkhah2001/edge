@@ -5,9 +5,11 @@ nav_order: 2
 has_children: true
 ---
 
-# ACAP 
+# ACAP
 
 Axis ARTPEC SoCs with integrated DLPUs for INT8 TFLite inference.
+
+**Related pages:** [DLPUs Explained]({{ site.baseurl }}/docs/dlpu-overview), [SDKs]({{ site.baseurl }}/docs/sdk), [Axis APIs]({{ site.baseurl }}/docs/apis), and the [ACAP v12 Programming Guide]({{ site.baseurl }}/docs/acap-v12-programming).
 
 ## Summary Table
 

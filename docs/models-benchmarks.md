@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Recommended Models & Benchmarks
-nav_order: 2.8
+parent: Axis Model Zoo
+nav_order: 1
 ---
 
 # Recommended Models & Benchmarks (Human Detection / Pose)
